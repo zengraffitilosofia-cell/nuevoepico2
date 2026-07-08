@@ -39,7 +39,7 @@ function RollingText({
   };
 
   return (
-    <span data-slot="rolling-text" ref={localRef} {...props}>
+    <motion.span data-slot="rolling-text" ref={localRef} {...props}>
       {text.split('').map((char, index) => (
         <span
           key={index}
@@ -64,7 +64,7 @@ function RollingText({
           </motion.span>
         </span>
       ))}
-    </span>
+    </motion.span>
   );
 }
 
